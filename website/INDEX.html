@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM HUB & CO</title>
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #030000;
+}
+
+header {
+    background-color: #0f0202;
+    color: #fcfdfa;
+    padding: 8px;
+    font-size: .8rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(29, 27, 27, 0.977);
+}
+
+nav a {
+    color: #fdfcfc;
+    padding: 0px 5px;
+    font-size: .8rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #070000;
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 1px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #070606;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #fcf9f9ed;
+    border: 1px solid #040404;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(17, 15, 15, 0.75);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+.card-content p {
+    color: #050404;
+    font-size: 0.9em;
+}
+
+.footer {
+    background-color: #090202;
+    color: #fff;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    font-size: .3rem;
+    width: 100%;
+}
+
+.add-to-cart-btn {
+    background-color: #d51d1d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.quantity-btn {
+    background-color: #b91111;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 3px;
+    transition: transform 0.3s ease;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #080303;
+    border-radius: 5px;
+    margin: 0 3px;
+    transition: transform 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    header {
+        font-size: 1.8em;
+    }
+
+    .card-content h3 {
+        font-size: 1.1em;
+    }
+
+    .card-content p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    header {
+        font-size: 1.4em;
+    }
+
+    .card-content h3 {
+        font-size: 1em;
+    }
+
+    .card-content p {
+        font-size: 0.7em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GYM HUB & CO</h1>
+        <p>Your one-stop shop for gym essentials</p>
+    </header>
+    <nav>
+        <a href="#HOME">Home</a>
+        <a href="Equipment.html">Equipment</a>
+        <a href="supplements.html">Supplements</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="CART.HTML">Cart</a>
+    </nav>
+    <div class="container">
+        <!-- Gyms Section -->
+        <section id="gyms" class="section">
+            
+            <h2>Our Gyms</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="FL.jpeg" alt="Gym 1">
+                    <div class="card-content">
+                        <h3>FLEXFIT UNISEX</h3>
+                        <p>State-of-the-art facilities for all your fitness needs.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="vl.jpeg" alt="Gym 2">
+                    <div class="card-content">
+                        <h3>VL fitness</h3>
+                        <p>Premium membership with access to all our locations.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="zzz.jpeg" alt="Gym 3">
+                    <div class="card-content">
+                        <h3>FITNESS ZONE</h3>
+                        <p>We specialize in training people to achieve body strength and weight loss.</p>
+                        <p><a href="http://fitnesszonehnk.wordpress.com/" target="_blank">Visit our site</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ddwef.jpeg" alt="Gym 4">
+                    <div class="card-content">
+                        <h3>MR.MUSCLE POWER</h3>
+                        <p>Professional gym with sophisticated and well-maintained types of equipment.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="download.jpeg" alt="Gym 5">
+                    <div class="card-content">
+                        <h3>SHIFT GYM</h3>
+                        <p>Friendly staff and super clean and comfortable gym.</p>
+                        <p><a href="https://www.shiftfitness.in/" target="_blank">Visit our site</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="212.jpeg" alt="Gym 6">
+                    <div class="card-content">
+                        <h3>CS FITNESS</h3>
+                        <p>Super gym with large space and well-trained coaches.</p>
+                        <p><a href="https://www.csfitness.in/" target="_blank">Visit our site</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="222.jpeg" alt="Gym 7">
+                    <div class="card-content">
+                        <h3>SKY GYM</h3>
+                        <p>The workouts are unique and scientifically developed.</p>
+                        <p>Contact number: 083412 73747</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="121.jpeg" alt="Gym 8">
+                    <div class="card-content">
+                        <h3>RAW GYM</h3>
+                        <p>Good gym with all the modern equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 GYM HUB & CO. All rights reserved.</p>
+    </footer>
+</body>
+</html>

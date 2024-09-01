@@ -1,0 +1,166 @@
+/* accessories.css */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040101;
+    padding: 15px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fcfbfb;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.product-card .description {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-controls .quantity-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-controls .quantity-input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.add-to-cart-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #555;
+}
+
+.add-to-cart-btn:focus {
+    outline: none;
+}
+
+.cart-animation {
+    position: absolute;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+.cart-animation img {
+    width: 50px;
+    height: 50px;
+}
+/* supplements.css */
+
+/* Style for the cart animation element */
+.cart-animation {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1000;
+    transition: left 0.5s ease, top 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cart-animation img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}

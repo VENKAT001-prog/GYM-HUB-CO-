@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Shopping Cart</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </section>
+        <section class="cart-summary">
+            <h3>Total: <span id="total-price">0</span> /-</h3>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+    </main>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select Payment Method</h2>
+            <div class="payment-options">
+                <button class="payment-btn" data-method="credit-card">Credit Card</button>
+                <button class="payment-btn" data-method="paypal">PayPal</button>
+                <button class="payment-btn" data-method="bank-transfer">Bank Transfer</button>
+            </div>
+            <div id="payment-details" class="payment-details">
+                <!-- Payment details will be shown here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
